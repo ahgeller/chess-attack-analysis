@@ -142,7 +142,7 @@ def extract_feature_state(board: chess.Board, color: bool):
     bishop_attacked_squares = set()
     rook_attacked_squares = set()
 
-    # --- Knight Pressure (attacks by knights) ---
+    # (attacks by knights)
     knight_pressure = []
     for sq, piece in piece_map.items():
         if piece.color == color and piece.piece_type == chess.KNIGHT:
@@ -157,7 +157,7 @@ def extract_feature_state(board: chess.Board, color: bool):
                     knight_pressure.append((sq, target_sq, EMPTY_SQUARE_CONTROL_VALUE))
     knight_pressure = tuple(sorted(knight_pressure))
 
-    # --- Bishop Pressure (diagonal attacks by bishops and queens) ---
+    # (diagonal attacks by bishops and queens)
     bishop_pressure = []
     for sq, piece in piece_map.items():
         if piece.color == color and piece.piece_type in (chess.BISHOP, chess.QUEEN):
@@ -175,7 +175,7 @@ def extract_feature_state(board: chess.Board, color: bool):
                         bishop_pressure.append((sq, target_sq, EMPTY_SQUARE_CONTROL_VALUE))
     bishop_pressure = tuple(sorted(bishop_pressure))
 
-    #Rook Pressure (file/rank attacks by rooks and queens)
+    # file/rank attacks by rooks and queens)
     rook_pressure = []
     for sq, piece in piece_map.items():
         if piece.color == color and piece.piece_type in (chess.ROOK, chess.QUEEN):
@@ -193,7 +193,7 @@ def extract_feature_state(board: chess.Board, color: bool):
                         rook_pressure.append((sq, target_sq, EMPTY_SQUARE_CONTROL_VALUE))
     rook_pressure = tuple(sorted(rook_pressure))
 
-    # --- Attacked opponent pieces (EXCLUDING squares already in piece-specific pressure) ---
+    # (EXCLUDING squares already in piece-specific pressure) 
     # This avoids double-counting tactical threats
     attacked_pieces = []
     for sq, piece in piece_map.items():
