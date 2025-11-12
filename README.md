@@ -3,9 +3,12 @@ To get started please run:
 git lfs install
 
 git clone https://github.com/ahgeller/chess-attack-analysis
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Prerequisites:
 pip install python-chess pandas matplotlib numpy tqdm
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Reproduction: 
 Your CSV file should have these columns:
@@ -30,6 +33,7 @@ After this step, run run.py.
 It will create/recreate the TESTatcData.csv and TESTatcDataLICHESSS.csv data.
 
 Finally run "whatdoesthistellme.py" to create the graphs I've already made.
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 opening_attack_advantage.png - Which openings create attacking chances
 <img width="1500" height="1050" alt="opening_attack_advantage" src="https://github.com/user-attachments/assets/d72cceeb-4014-4ef8-a82a-08088ab30bfb" />
