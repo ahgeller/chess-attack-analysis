@@ -32,26 +32,19 @@ It will create/recreate the TESTatcData.csv and TESTatcDataLICHESSS.csv data.
 Finally run "whatdoesthistellme.py" to create the graphs I've already made.
 
 opening_attack_advantage.png - Which openings create attacking chances
-
-white_vs_black_correlation.png - Attack symmetry analysis
-
-rating_vs_attack.png - Attack patterns by skill level
-
-attack_progression.png - Attack values throughout the game
-
-attack_distributions.png - Statistical distributions of attack values
-
-attack_vs_outcome.png - How attack correlates with winning
-
 <img width="1500" height="1050" alt="opening_attack_advantage" src="https://github.com/user-attachments/assets/d72cceeb-4014-4ef8-a82a-08088ab30bfb" />
 
+white_vs_black_correlation.png - Attack symmetry analysis
 <img width="1200" height="1200" alt="white_vs_black_correlation" src="https://github.com/user-attachments/assets/c7557617-f19e-4456-9a65-5da4c35fbb4b" />
 
-*2400+ data is more limited*
+rating_vs_attack.png - Attack patterns by skill level *2400+ data is more limited*
 <img width="2100" height="750" alt="rating_vs_attack" src="https://github.com/user-attachments/assets/aa45cb07-3a1b-4597-abae-e850f9e94b81" />
 
+attack_progression.png - Attack values throughout the game
 <img width="1800" height="750" alt="attack_progression" src="https://github.com/user-attachments/assets/88a555e7-c86f-4146-9888-ada7b781e5f3" />
 
+attack_distributions.png - Statistical distributions of attack values
 <img width="2250" height="750" alt="attack_distributions" src="https://github.com/user-attachments/assets/3a3bcaa6-6d1a-45b3-8cc9-7c0f9c140150" />
 
+attack_vs_outcome.png - How attack correlates with winning
 <img width="2100" height="750" alt="attack_vs_outcome" src="https://github.com/user-attachments/assets/352b865f-60ad-4174-9803-ee3ddbb8fd84" />
