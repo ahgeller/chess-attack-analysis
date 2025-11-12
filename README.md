@@ -5,7 +5,7 @@ git lfs install
 git clone https://github.com/ahgeller/chess-attack-analysis
 
 Prerequisites:
-pip install python-chess pandas matplotlib numpy
+pip install python-chess pandas matplotlib numpy tqdm
 
 Reproduction: 
 Your CSV file should have these columns:
