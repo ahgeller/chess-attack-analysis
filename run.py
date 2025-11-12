@@ -15,11 +15,12 @@ my_data = pd.read_csv(csv_path)
 my_data = my_data[my_data['moves'].notna() & (my_data['moves'].str.strip() != '')]
 
 #WARNING IF YOU USE THIS DATASET USE ONLE PART OF IT
-csv_path = os.path.join(script_dir, "CSV files", "lichess-08-2014.csv")
-my_data = pd.read_csv(csv_path)
-my_data = my_data.rename(columns={'PGN': 'moves'})
-my_data = my_data[my_data['moves'].notna() & (my_data['moves'].str.strip() != '')]#.take(range(100000)) 
-my_data["id"] = my_data.index + 1
+#csv_path = os.path.join(script_dir, "CSV files", "lichess-08-2014.csv")
+#my_data = pd.read_csv(csv_path)
+#my_data = my_data.rename(columns={'PGN': 'moves'})
+#my_data = my_data[my_data['moves'].notna() & (my_data['moves'].str.strip() != '')]#.take(range(100000)) 
+#my_data["id"] = my_data.index + 1
+
 df = my_data
 
 file_save_name = 'TESTatcData.csv'
