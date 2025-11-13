@@ -6,6 +6,8 @@ git lfs install
 
 git clone https://github.com/ahgeller/chess-attack-analysis
 
+Unzip the CSV files.7z
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Prerequisites:
@@ -29,8 +31,6 @@ If you want to use it, remove the # to enable .take(range(100000)) (or adjust th
 
 However, I've already processed the entire lichess-08-2014.csv file and used it to create the graphs. 
 If you would simply like to see the results, look at the graph folder.
-
-Unzip the CSV files.7z
 
 After this step, run run.py.
 
