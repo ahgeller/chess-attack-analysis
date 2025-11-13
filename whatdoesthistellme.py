@@ -6,10 +6,20 @@ import os
 # Load and combine datasets
 script_dir = os.path.dirname(os.path.abspath(__file__))
 csv1_path = os.path.join(script_dir, "CSV files", "TESTatcData.csv")
-csv2_path = os.path.join(script_dir, "CSV files", "TESTatcDataLichess.csv")
+try:
+    print("Finding TESTatcDataLichess")
+    csv2_path = os.path.join(script_dir, "CSV files", "TESTatcDataLichess.csv")
+    print("Success! Now loading data.")
+
+    df2 = pd.read_csv(csv2_path)
+    print("Using TESTatcDataLichess")
+except:
+    print("Only using TESTatcDATA")
+    df2 = pd.DataFrame()
+
+ 
 
 df1 = pd.read_csv(csv1_path)
-df2 = pd.read_csv(csv2_path)
 # df2.to_parquet('large-file.parquet', compression='gzip')
 
 # Standardize columns before combining
