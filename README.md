@@ -1,5 +1,7 @@
 To get started please run:
 
+cd ~\Desktop
+
 git lfs install
 
 git clone https://github.com/ahgeller/chess-attack-analysis
