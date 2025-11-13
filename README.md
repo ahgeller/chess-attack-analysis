@@ -16,6 +16,8 @@ id,moves,opening_name,white_rating,black_rating
 1,"e4 e5 Nf3 Nc6 Bb5 a6","Ruy Lopez",1500,1480
 2,"d4 d5 c4 e6 Nc3 Nf6","Queen's Gambit Declined",1620,1595
 
+The lichess game file after converted will not incluede the opening.
+
 For your convenience I've converted the files: games.csv  into TESTatcData.csv 
 
 **Processing Time Warning**: If you would like to run the game files through 
