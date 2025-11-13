@@ -27,7 +27,8 @@ For your convenience I've converted the files: games.csv  into TESTatcData.csv
 **Processing Time Warning**: If you would like to run the game files through 
 attack_value_full.py to calculate attack values, I recommend only using games.csv 
 as the lichess file would require millions of iterations and hours of processing time. 
-If you want to use it, remove the # to enable .take(range(100000)) (or adjust the number to whatever amount you prefer).
+If you want to use it, remove the (#) from lines 18 through 22.
+Remove the (#) near the end of line 21 to enable .take(range(100000)) (or adjust the number to whatever amount you prefer).
 
 However, I've already processed the entire lichess-08-2014.csv file and used it to create the graphs. 
 If you would simply like to see the results, look at the graph folder.
